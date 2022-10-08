@@ -10,13 +10,16 @@
     <!-- link for icons -->
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+
 </head>
+<script>
+
+</script>
 <body>
 
-    <header>
+    <!-- <header>
         <a href="#" class="logo">Atharv</a>
-
-        <div class="bx bx-menu" id="menu-icon"></div>
 
         <ul class="navbar">
             <li><a href="#main">Home</a></li>
@@ -24,15 +27,42 @@
             <li><a href="#skills">Skills</a></li>
             <li><a href="#work">Work</a></li>
             <li><a href="#contact"contact>Contact</a></li>
-            <div class="bx bx-moon" id="dark-mode"></div>
 
         </ul>
+
+    </header> -->
+
+    <header>
+        <nav>
+            <h1 class="logo">Atharv</h1>
+            <div class="menu">
+                <a href="#main">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#work">Work</a>
+                <a href="#contact"contact>Contact</a>
+            </div>
+    
+
+            <button class="hamburger">
+                <span class="material-icons">menu</span>
+            </button>
+        </nav>
+
+
+        <div class="mobile-menu is-open">
+            <a href="#main">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#work">Work</a>
+            <a href="#contact"contact>Contact</a>
+        </div>
 
     </header>
 
 
-    <section class="home" id="home">
 
+    <section class="home" id="home">
         <div class="intro_left">
             <div class="home_profile_text">
                 <h1 class="home_title">
@@ -72,7 +102,9 @@
             <img src="assets/profile_image.png">
         </div>
         <div class="about-text">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem veniam quae vitae cum excepturi, velit temporibus at. Reprehenderit sunt vel perspiciatis debitis eligendi mollitia odit provident voluptates dicta molestias assumenda fuga, minus exercitationem dolorem nam necessitatibus ea, suscipit aut asperiores. Quam amet, voluptatem, ipsum facere non veritatis laudantium voluptatibus delectus quis provident ex animi.</p>
+            <h1>I'm Atharv Sharma</h1><br>
+            <p>I'm currently persusing masters in software development at University of Glasgow. I enjoy developing software solutions to various problems.</p>
+            <p>When im not working you can see me playing badminton, traveling or the best sleeping zzzzz</p>
 
         </div>
     </div>
@@ -141,7 +173,7 @@
 </section>
 
 <!-- Projects -->
-<section class="project" id="project">
+<section class="project" id="work">
 
     <div class="heading">
         <h2>Projects</h2>
@@ -152,26 +184,26 @@
         <!-- project 1 -->
         <div class="project-box">
             <div class="project-icon">
-                <i class='bx bx-desktop'></i>
+                <i class='bx bxs-car'></i>
             </div>
-            <h3>Computer Vision</h3>
+            <h3>Self Driving Car Model</h3>
 
             <div class=".project-text">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto architecto facere autem ex delectus cupiditate excepturi recusandae qui nesciunt earum, at, culpa sint veniam.
+                Developed a car model which used sensors and camera to navigate itself between two lanes. It was developed using Arduino, Raspberry pi and openCV. (Technologies: c++)
             </div>
-            <a href="https://github.com/atharvsharma1998">View</a>
+            <a href="https://github.com/atharvsharma1998/self-driving-car">View</a>
         </div>
 
         <!-- project 2 -->
         <div class="project-box">
             <div class="project-icon">
-                <i class='bx bx-desktop'></i>
+                <i class='bx bxs-traffic-cone'></i>
             </div>
-            <h3>Computer Vision</h3>
+            <h3>Self Parking Car</h3>
             <div class=".project-text">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto architecto facere autem ex delectus cupiditate excepturi recusandae qui nesciunt earum, at, culpa sint veniam.
+                    Developed a car model which used ultrasonic sensors to navigate itself to autonomously park in a available space. It was developed using Arduino, gsm module and ultrasonic sensors. (Technology: c++)
             </div>
-            <a href="https://github.com/atharvsharma1998">View</a>
+            <a href="https://github.com/atharvsharma1998/self-driving-car">View</a>
         </div>
 
         <!-- project 3 -->
@@ -179,11 +211,11 @@
             <div class="project-icon">
                 <i class='bx bx-desktop'></i>
             </div>
-            <h3>Computer Vision</h3>
+            <h3>Tesla IOS App Mockup</h3>
             <div class=".project-text">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto architecto facere autem ex delectus cupiditate excepturi recusandae qui nesciunt earum, at, culpa sint veniam.
+                    Developed an ios app to show design concept of tesla app. It was build using static data. (Technology: swiftUI)
             </div>
-            <a href="https://github.com/atharvsharma1998">View</a>
+            <a href="https://github.com/atharvsharma1998/TeslaApp">View</a>
         </div>
 
         <!-- project 4 -->
@@ -191,15 +223,15 @@
             <div class="project-icon">
                 <i class='bx bx-desktop'></i>
             </div>
-            <h3>Computer Vision</h3>
+            <h3>Weather app</h3>
             <div class=".project-text">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto architecto facere autem ex delectus cupiditate excepturi recusandae qui nesciunt earum, at, culpa sint veniam.
+                    Developed an cross platform weather app which shows weather of a location. (Technologies: Google maps API, Flutter)
             </div>
             <a href="https://github.com/atharvsharma1998">View</a>
         </div>
 
         <!-- project 5 -->
-        <div class="project-box">
+        <!-- <div class="project-box">
             <div class="project-icon">
                 <i class='bx bx-desktop'></i>
             </div>
@@ -208,10 +240,10 @@
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto architecto facere autem ex delectus cupiditate excepturi recusandae qui nesciunt earum, at, culpa sint veniam.
             </div>
             <a href="https://github.com/atharvsharma1998">View</a>
-        </div>
+        </div> -->
 
         <!-- project 6 -->
-        <div class="project-box">
+        <!-- <div class="project-box">
             <div class="project-icon">
                 <i class='bx bx-desktop'></i>
             </div>
@@ -220,11 +252,9 @@
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto architecto facere autem ex delectus cupiditate excepturi recusandae qui nesciunt earum, at, culpa sint veniam.
             </div>
             <a href="https://github.com/atharvsharma1998" target="_blank">View</a>
-        </div>
-        <!-- 
-        <div class="projects-img">
-            <img src="assets/projects.jpeg">
         </div> -->
+
+
 
     </div>
 </section>
